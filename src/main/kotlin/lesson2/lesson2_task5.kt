@@ -1,7 +1,6 @@
 package lesson2
 
 import kotlin.math.pow
-import kotlin.math.roundToInt
 
 fun main() {
 
@@ -10,7 +9,6 @@ fun main() {
     val yearsOfDeposit = 20
 
     val depositSum = moneyInDeposit * (1 + 0.01 * percentageOfDeposit).pow(yearsOfDeposit)
-    val roundedDepositSum = (depositSum * 1000).roundToInt() / 1000.0
 
-    println(roundedDepositSum)
+    println(String.format("%.3f", depositSum))
 }
