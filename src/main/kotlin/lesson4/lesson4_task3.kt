@@ -1,24 +1,20 @@
 package lesson4
 
+const val IS_SUNNY = true
+const val IS_AWNING_OPEN = true
+const val AIR_HUMIDITY = 20
+const val UNFAVORABLE_SEASON = "Winter"
+
 fun main() {
 
-    val favorableWeatherIsSunny = true
-    val openTentStatus = true
-    val airHumidity = 20
-    val unfavorableSeason = "Winter"
-
-    val currentWeatherIsSunny: Boolean = true
-    val currentOpenTentStatus: Boolean = true
-    val currentAirHumidity: Int = 20
-    val currentSeason: String = "Winter"
-
-
-
+    val isWeatherSunnyCurrent: Boolean = true
+    val isAwningOpenCurrent: Boolean = true
+    val airHumidityCurrent: Int = 20
+    val seasonCurrent: String = "Winter"
 
     println("Благоприятные ли условия сейчас для роста бобовых?" +
-            " ${(favorableWeatherIsSunny == currentWeatherIsSunny) &&
-            (openTentStatus == currentOpenTentStatus) &&
-            (airHumidity == currentAirHumidity) &&
-            (currentSeason != unfavorableSeason)}")
-
+            " ${(IS_SUNNY == isWeatherSunnyCurrent) &&
+                (IS_AWNING_OPEN == isAwningOpenCurrent) &&
+                (AIR_HUMIDITY == airHumidityCurrent) && 
+                (UNFAVORABLE_SEASON != seasonCurrent)}")
 }
