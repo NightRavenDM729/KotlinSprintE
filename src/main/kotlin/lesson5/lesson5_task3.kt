@@ -21,4 +21,6 @@ fun main() {
         println("Failure! Spin the wheel!")
     }
 
+    println("Winning numbers were: ${numbersToWin.contentToString()}")
+
 }
