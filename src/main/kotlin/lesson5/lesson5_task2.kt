@@ -6,7 +6,7 @@ fun main() {
 
     println("Enter your birth year:")
 
-    val userBirthYear = readLine()!!.toInt()
+    val userBirthYear = readln().toInt()
     val userAge = Calendar.getInstance().weekYear - userBirthYear
 
     val resultText = if (userAge >= AGE_OF_MAJORITY) {
