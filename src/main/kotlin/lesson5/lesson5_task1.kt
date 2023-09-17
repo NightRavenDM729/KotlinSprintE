@@ -2,10 +2,15 @@ package lesson5
 
 fun main() {
 
-    println("To log in solve the task below:\n7 + 4 = ?")
+    val firstNumber = 4
+    val secondNumber = 7
+
+    println("To log in solve the task below:")
+    println("$firstNumber + $secondNumber")
+
 
     val usersAnswerToLogIn = readln().toInt()
-    val rightAnswerToLogIn = 11
+    val rightAnswerToLogIn = firstNumber + secondNumber
 
     if (usersAnswerToLogIn == rightAnswerToLogIn) {
         println("Successfully! Welcome!")
